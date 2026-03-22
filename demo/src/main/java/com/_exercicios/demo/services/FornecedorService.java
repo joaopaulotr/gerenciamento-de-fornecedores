@@ -26,4 +26,6 @@ public class FornecedorService {
             throw new RuntimeException("Fornecedor não encontrado com o ID:"+idInformado);
         }
     }
+
+    public void deletarFornecedor(Long id){fornecedorRepository.deleteById(id);}
 }
